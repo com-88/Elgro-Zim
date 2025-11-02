@@ -1,10 +1,10 @@
 {
   "name": "elton",
   "version": "1.0.0",
-  "main": "Front end/Back end/server.js",
+  "main": "frontend/backend/server.js",
   "scripts": {
-    "start": "node \"Front end/Back end/server.js\"",
-    "dev": "nodemon \"Front end/Back end/server.js\""
+    "start": "node frontend/backend/server.js",
+    "dev": "nodemon frontend/backend/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

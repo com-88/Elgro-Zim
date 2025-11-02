@@ -1,1 +1,1 @@
-web: node "Front end/Back end/server.js"
+web: node frontend/backend/server.js
