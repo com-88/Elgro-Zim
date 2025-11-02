@@ -1,7 +1,7 @@
 {
   "name": "elton",
   "version": "1.0.0",
-  "main": "\"Front end/Back end/server.js\"",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
