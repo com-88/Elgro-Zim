@@ -1,4 +1,5 @@
 const path = require('path');
-const target = path.join(__dirname, 'Front end', 'Back end', 'server.js');
+// Adjusted to use the renamed `frontend` directory. The backend folder still contains a space 'Back end'.
+const target = path.join(__dirname, 'frontend', 'Back end', 'server.js');
 console.log('Starting app via index.js ->', target);
 require(target);
