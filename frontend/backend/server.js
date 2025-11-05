@@ -130,7 +130,7 @@ app.post("/send-contact", ensureEmailConfigured, upload.none(), async (req, res)
   const { Name, Email, Subject, Message } = req.body;
 
   const mailOptions = {
-    from: `"Elgro Contact Form" <${process.env.EMAIL_USER || ""}>`,elgrozim1@gmail.com
+    from: `"Elgro Contact Form" <${process.env.EMAIL_USER || "elgrozim1@gmail.com"}>`,
     to: process.env.EMAIL_TO || "elgrozim1@gmail.com",
     subject: `📬 New Contact Message: ${Subject || ""}`,
     html: `
