@@ -44,8 +44,8 @@ const upload = multer({ dest: uploadDir });
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.EMAIL_USER || "babraichoa@gmail.com",
-    pass: process.env.EMAIL_PASS || "Babra@03.com.com",
+    user: process.env.EMAIL_USER || "elgrozim1@gmail.com",
+    pass: process.env.EMAIL_PASS || "ndgj fxqt evtr mnbo",
   },
 });
 
@@ -84,8 +84,8 @@ app.post("/send-diagnosis", ensureEmailConfigured, upload.array("file_photo", 5)
   } = req.body;
 
   const mailOptions = {
-    from: `"Elgro Diagnosis Form" <${process.env.EMAIL_USER || "babraichoa@gmail.com"}>`,
-    to: process.env.EMAIL_TO || "babraichoa@gmail.com",
+    from: `"Elgro Diagnosis Form" <${process.env.EMAIL_USER || "elgrozim1@gmail.com"}>`,
+    to: process.env.EMAIL_TO || "elgrozim1@gmail.com",
     subject: `🧪 New Crop Diagnosis Request from ${Farmer_Name || "Unknown"}`,
     html: `
       <h2>🌾 Crop Diagnosis Request</h2>
@@ -130,8 +130,8 @@ app.post("/send-contact", ensureEmailConfigured, upload.none(), async (req, res)
   const { Name, Email, Subject, Message } = req.body;
 
   const mailOptions = {
-    from: `"Elgro Contact Form" <${process.env.EMAIL_USER || "babraichoa@gmail.com"}>`,
-    to: process.env.EMAIL_TO || "babraichoa@gmail.com",
+    from: `"Elgro Contact Form" <${process.env.EMAIL_USER || ""}>`,elgrozim1@gmail.com
+    to: process.env.EMAIL_TO || "elgrozim1@gmail.com",
     subject: `📬 New Contact Message: ${Subject || ""}`,
     html: `
       <h2>📞 Contact Form Submission</h2>
