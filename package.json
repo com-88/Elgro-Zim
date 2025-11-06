@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node frontend/backend/server.js",
+    "dev": "nodemon frontend/backend/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
